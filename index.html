@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*-------Tasks with while------*/    
+        // 1 task
+        // let symb = "#";
+        // let count = 0;
+        // count = parseInt(prompt("Введите число:", 10));
+        // while(count != 0){
+        //     document.write(symb);
+        //     count--;
+        // }
+/*-------------------------*/
+        // 2 task
+        // let number = 0;
+        // number = parseInt(prompt("Введите число:", 10));
+        // while(number != -1){
+        //     document.write(number+" ");
+        //     number--;
+        // }
+/*-------------------------*/
+        // 3 task
+        // let number,power = 0;
+        // let check = false;
+        // number = parseInt(prompt("Введите число:", 10));
+        // power = parseInt(prompt("Введите степень:", 2));
+        // while(check == false ){
+        //     number = number ** power;
+        //     check = true;
+        // }
+        // document.write("result: " + number);
+/*-------------------------*/
+        // 4 task
+        // let num1 = parseInt(prompt("Введите число 1:"));
+        // let num2 = parseInt(prompt("Введите число 2:"));
+        // let result, temp;
+        // while (num1 != num2) {
+        //     if (num1 > num2) 
+        //     {
+        //         num1 = num1 - num2;
+        //     } 
+        //     else if(num1 < num2) 
+        //     {
+        //         temp = num1;
+        //         num1 = num2;
+        //         num2 = temp;  
+        //     }
+        // }
+        // document.write("result: " + num1);
+/*-------------------------*/
+        // 5 task
+        // let num1 = parseInt(prompt("Введите число:", 0));
+        // let result = 1;
+        // while(num1 != 0){
+        //     result = result * num1;
+        //     num1--;
+        // }
+        // document.write("result: " + result);
+
+
+/*-------Tasks with do...while------*/   
+        // 1 task
+        // let userAns;
+        // let answ = 2+2*2;
+        // do{
+        //     userAns = parseInt(prompt("Введите решение: 2 + 2 * 2 = "));
+        // }
+        // while(userAns != answ);
+        // alert("Correct!");
+/*-------------------------*/
+        // 2 task
+        // let number = 1000;
+        // let result = 1;
+        // let counter = 0;
+        // do{
+        //     if(counter >= 1){
+        //         result = result /2;
+        //     }
+        //     else{
+        //         result = number /2;
+        //     }
+        //     counter++;
+        // }
+        // while(result > 50);
+        // document.write("Result: " + result + " Counter: " + counter);
+
+
+/*-------Tasks with for------*/   
+        // 3 task: Вывести все числа от 1 до 100, которые кратные указанному пользователем числу.
+        // let userNum = prompt("Enter number: ");
+        // for(let i = 1; i <= 100; i++){
+        //         if(i % userNum === 0){
+        //                 document.write(i+" ");
+        //         }      
+        // }
+        
+/*-------------------------*/
+       // 4 task: Вывести каждый 4-й элемент из указанного пользователем диапазона. Пользователь указывает минимальное и максимальное значения диапазона
+//        let num1 = prompt("Enter range: from ");
+//        let num2 = prompt("Enter range: to ");
+//        let counter = 1;
+//         for(let i = num1; i <= num2; i++){
+//                 if(counter == 4){
+//                         document.write(i+" ");
+//                         counter = 1;
+//                 }
+//                 else{
+//                         counter++;
+//                 }  
+//         }
+/*-------------------------*/
+      // 5 task: Запросить число и проверить, простое ли оно. Простое число делится без остатка только на себя и на единицу.
+       let num = prompt("Enter number:");
+       let check = true;
+       let count = 0;
+       if(num > 1)
+        {
+        for(let i = 2; i < 10; i++){
+            if(num % i === 0 && num != i){
+                document.write("The number is not simple :(");
+                break;
+            }
+            else{
+                if(i===9){
+                   document.write("The number " + num + " is simple!");
+                } 
+            }
+        }
+        }
+/*-------------------------*/
+
+
+    </script>
+</body>
+</html>
